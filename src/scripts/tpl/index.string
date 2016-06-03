@@ -1,0 +1,79 @@
+<div class="m-index">
+	<header>
+		<ul>
+			<li class="yo-ico">&#xe745;</li>
+			<li>
+				<span class="active">热点</span>
+				<span>关注</span>
+			</li>
+			<li class="yo-ico">&#xe684;</li>
+		</ul>
+	</header>
+	<nav>
+		<ul>
+			<li class="active">呵呵呵</li>
+			<li>哈哈哈</li>
+			<li>嘿嘿嘿</li>
+		</ul>
+	</nav>
+	<section id="my-scroll" spa-widget='scroll'>
+		<div>
+			<ul>
+				<li>
+					<i><img src="/text/images/img1.jpg"/></i>
+					<b>哇哈哈哇哈哈</b>
+				</li>
+				<li></li>
+				<li>
+					<i><img src="/text/images/img2.jpg"/></i>
+					<b>哇哈哈哇哈哈</b>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<i><img src="/text/images/img3.jpg"/></i>
+					<b>哇哈哈哇哈哈</b>
+				</li>
+				<li></li>
+				<li>
+					<i><img src="/text/images/img4.jpg"/></i>
+					<b>哇哈哈哇哈哈</b>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<i><img src="/text/images/img1.jpg"/></i>
+					<b>哇哈哈哇哈哈</b>
+				</li>
+				<li></li>
+				<li>
+					<i><img src="/text/images/img2.jpg"/></i>
+					<b>哇哈哈哇哈哈</b>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<footer>
+		<ul>
+			<li>
+				<i class="yo-ico">&#xe6bb;</i>
+				<b>首页</b>
+			</li>
+			<li class="active">
+				<i class="yo-ico">&#xe65c;</i>
+				<b >发现</b>
+			</li>
+			<li>
+				<i class="yo-ico">&#xe664;</i>
+			</li>
+			<li>
+				<i class="yo-ico">&#xe735;</i>
+				<b>我的</b>
+			</li>
+			<li action-type='exit'>
+				<i class="yo-ico">&#xe603;</i>
+				<b>退出</b>
+			</li>
+		</ul>
+	</footer>
+</div>

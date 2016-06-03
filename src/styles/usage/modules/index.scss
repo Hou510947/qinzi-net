@@ -1,0 +1,159 @@
+.m-index{
+    width: 100%;
+    height: 100%;
+    @include flexbox();
+    @include flex-direction(column);
+    & > *{
+        width: 100%;
+    }
+    header{
+        height: .44rem;
+        background: #0dc441;
+        ul{
+            width: 100%;
+            height: 100%;
+             @include flexbox();
+            li:not(:nth-child(2)){
+               width: .44rem;
+               line-height: .44rem;
+               text-align: center; 
+               font-size: .2rem;
+               color: rgba(255,255,255,0.7);
+            }
+            li:nth-child(2){
+                @include flex();
+                @include flexbox();
+                @include justify-content(center);
+                @include align-items(center);
+                span{
+                    display: inline-block;
+                    width: .59rem;
+                    height: .25rem;
+                    text-align: center;
+                    line-height: .25rem;
+                    font-size:.14rem;
+                    color: rgba(255,255,255,0.6);
+                    background: rgba(100, 217, 133, 0.5);
+                    &:first-child{
+                        border-top-left-radius: .1rem;
+                        border-bottom-left-radius: .1rem;
+                    }
+                    &:last-child{
+                        border-top-right-radius: .1rem;
+                        border-bottom-right-radius: .1rem;
+                    }
+                    &.active{
+                        background: #64d985;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+    nav{
+        height: .35rem;
+        background: white;
+        ul{
+            width: 100%;
+            height: 100%;
+            @include flexbox();
+            li{
+                @include flex();
+                height: 100%;
+                text-align: center;
+                line-height: .35rem;
+                @include border(0 0 1px 0 , #d9d9d9 );
+                @include box-sizing(border-box);
+                &.active{
+                    border-bottom: solid .02rem #0dc441; 
+                    color:#0dc441 ;
+                }
+            }
+        }
+    }
+    section{
+        @include flex();
+        width: 100%;
+        overflow: hidden;
+        ul{
+            width: 100%;
+            @include flexbox();
+            li{
+                @include box-sizing(border-box);
+                margin-top: .05rem;
+                &:nth-child(2){
+                    width: .05rem;
+                } 
+                &:not(:nth-child(2)) {
+                  @include flex();
+                  @include border(1px, #e5e5e5);
+                }
+                i,b{
+                    display: block;
+                    font-weight: normal;
+                }
+                i{
+                    @include border(0 0 1px 0, #e5e5e5);
+                    img{
+                        width: 100%;
+                    }
+                }
+                b{
+                    font-size: .14rem;
+                    background: white;
+                    padding: 5px 0;
+                }
+            }
+        }
+    }
+    footer{
+        height: .44rem;
+        background: white;
+        ul{
+            width: 100%;
+            height: 100%;
+            @include border(1px 0 0 0 , #d9d9d9 );
+            @include box-sizing(border-box);
+            @include flexbox();
+            li{
+                @include flex(); 
+                @include flexbox();
+                @include justify-content(center);
+                @include align-items(center);
+                @include flex-direction(column);
+                position: relative;
+                &.active i,
+                &.active b{
+                    color: #0dc441 !important;
+                }
+                i,b{
+                    font-weight: normal;
+                    display: block;
+                    color: #d6d6d6;
+                }
+                i{
+                    font-size: .18rem;
+                    line-height: .18rem;
+                } 
+                b{
+                    font-size: .12rem;
+                }
+                &:nth-child(3) i{
+                    position: absolute !important;
+                    bottom: 0;
+                    left: 50%;
+                    width: .54rem;
+                    height: .54rem;
+                    @include transform(translate(-50% , 0));
+                    @include box-sizing(border-box);
+                    @include border(1px, #d9d9d9 , solid,50%);
+                    text-align: center;
+                    line-height: .54rem;
+                    font-size: .36rem;
+                    background: white;
+                    z-index: 1999;
+                }
+            }
+        }
+    }
+}
